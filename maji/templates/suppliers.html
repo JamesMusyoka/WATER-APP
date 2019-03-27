@@ -1,0 +1,7 @@
+{% extends 'waterer/base.html'%}
+{% for suppliers in seppliers %}
+<img src="{suppliers.suppliers_pic.url}" alt="suppliers" height="200px" width="200px">
+<div class="row">
+    <h1 class="text-center">{{suppliers.first_name}}</h1>
+  </div>
+{% endfor %}
